@@ -33,7 +33,6 @@ SECRET_KEY = "django-insecure-p05!up)5qxh%)#+acixtk)p$*-j62#fw62*u-z$@2!==_s)_=0
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "0.0.0.0",
     "127.0.0.1",
     "localhost",
     "cowrywise-backend-test.herokuapp.com",
