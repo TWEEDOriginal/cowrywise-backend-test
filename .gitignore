@@ -1,0 +1,9 @@
+.env
+.venv
+venv/
+ENV/
+VENV/
+env.bak/
+venv.bak/
+*/*.log
+staticfiles/
