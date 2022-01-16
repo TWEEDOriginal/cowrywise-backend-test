@@ -55,7 +55,9 @@
     ```sh
     $ python manage.py runserver
     ```
-3. Run the unittests written for the API. The tests are located in [uuid_generator/tests.py](uuid_generator/tests.py).
+3. Make a get, post, put or patch request to the localhost url or the [website](https://cowrywise-backend-test.herokuapp.com/) to view the result.   
+
+4. Run the unittests written for the API. The tests are located in [uuid_generator/tests.py](uuid_generator/tests.py).
     ```sh
     $ python manage.py test
     ```
