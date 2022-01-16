@@ -20,6 +20,12 @@ USER_NAME = os.getenv("USER_NAME")
 PASSWORD = os.getenv("PASSWORD")
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
+print(TIME_ZONE)
+print(DB_NAME)
+print(USER_NAME)
+print(PASSWORD)
+print(HOST)
+print(PORT)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
