@@ -19,13 +19,7 @@ DB_NAME = os.getenv("DB_NAME")
 USER_NAME = os.getenv("USER_NAME")
 PASSWORD = os.getenv("PASSWORD")
 HOST = os.getenv("HOST")
-PORT = os.getenv("PORT")
-print(TIME_ZONE)
-print(DB_NAME)
-print(USER_NAME)
-print(PASSWORD)
-print(HOST)
-print(PORT)
+DB_PORT = os.getenv("DB_PORT")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -36,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-p05!up)5qxh%)#+acixtk)p$*-j62#fw62*u-z$@2!==_s)_=0"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
@@ -104,11 +98,11 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql_psycopg2",
-            "NAME": "d4b2qc2tih336q",
-            "USER": "cjkkebtfcmjgxg",
-            "PASSWORD": "d493e31ca18fde22ba695919a600f0813b8d4e49983cdd04c1513495b4c93ec0",
-            "HOST": "ec2-35-171-250-21.compute-1.amazonaws.com",
-            "PORT": 5432,
+            "NAME": DB_NAME,
+            "USER": USER_NAME,
+            "PASSWORD": PASSWORD,
+            "HOST": HOST,
+            "DB_PORT": DB_PORT,
         }
     }
 
