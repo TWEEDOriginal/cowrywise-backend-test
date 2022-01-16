@@ -104,11 +104,11 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql_psycopg2",
-            "NAME": DB_NAME,
-            "USER": USER_NAME,
-            "PASSWORD": PASSWORD,
-            "HOST": HOST,
-            "PORT": PORT,
+            "NAME": "d4b2qc2tih336q",
+            "USER": "cjkkebtfcmjgxg",
+            "PASSWORD": "d493e31ca18fde22ba695919a600f0813b8d4e49983cdd04c1513495b4c93ec0",
+            "HOST": "ec2-35-171-250-21.compute-1.amazonaws.com",
+            "PORT": 5432,
         }
     }
 
