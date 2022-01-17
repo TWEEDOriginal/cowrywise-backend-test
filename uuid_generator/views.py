@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import UuidSerializer
@@ -12,10 +13,8 @@ def uuid_view_set(request):
     serializer = serializer_class(queryset, many=True)
 
     # convert list of ordered dictionaries to key value pairs
-
-    output = {
-        item["key"].replace("T", " ").split("+", 1)[0]: item["value"]
-        for item in serializer.data
-    }
+    output = OrderedDict()
+    for item in serializer.data:
+        output[item["key"].replace("T", " ").split("+", 1)[0]] = item["value"]
 
     return Response(output)
